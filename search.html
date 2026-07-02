@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search — ClayBlog</title>
+  <meta name="description" content="Search through all ClayBlog articles on technology, lifestyle, productivity, and design." />
+  <meta name="robots" content="noindex, follow" />
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-icon">✦</span> ClayBlog</a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="category.html" class="nav-link">Categories</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="search.html" class="btn-icon" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="search-hero">
+      <div class="container">
+        <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:24px;letter-spacing:-0.03em">Search Articles</h1>
+        <form id="search-form" class="search-box">
+          <input type="search" id="search-input" class="clay-input" placeholder="Search articles…" aria-label="Search" />
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="container ad-zone">
+      <div class="ad-placeholder"><span>Advertisement</span></div>
+    </div>
+
+    <section class="search-results">
+      <div class="container">
+        <p id="search-heading" style="font-size:1rem;color:#6b7280;font-weight:700;margin-bottom:24px">Enter a search term above to find articles.</p>
+
+        <div class="two-col" style="gap:24px">
+          <div>
+            <div class="search-results-grid" id="results-list">
+              <a href="post.html" class="search-result-item">
+                <div class="result-thumb" style="background:linear-gradient(135deg,#a5f3fc,#818cf8)">🤖</div>
+                <div class="result-body">
+                  <span class="tag tag-tech" style="margin-bottom:8px;display:inline-flex">Technology</span>
+                  <h3>10 AI Tools That Will Change How You Work in 2025</h3>
+                  <p>From writing assistants to automated workflows — here's what's actually worth your time and attention in 2025.</p>
+                  <span class="read-time" style="display:block;margin-top:6px">8 min read · June 28, 2025</span>
+                </div>
+              </a>
+              <a href="post.html" class="search-result-item">
+                <div class="result-thumb" style="background:linear-gradient(135deg,#bbf7d0,#fde68a)">🌅</div>
+                <div class="result-body">
+                  <span class="tag tag-life" style="margin-bottom:8px;display:inline-flex">Lifestyle</span>
+                  <h3>Morning Routines of Highly Productive People</h3>
+                  <p>Small habits compounded over time create extraordinary results. Here's what the data says about morning routines.</p>
+                  <span class="read-time" style="display:block;margin-top:6px">6 min read · June 25, 2025</span>
+                </div>
+              </a>
+              <a href="post.html" class="search-result-item">
+                <div class="result-thumb" style="background:linear-gradient(135deg,#fecdd3,#c4b5fd)">🧠</div>
+                <div class="result-body">
+                  <span class="tag tag-prod" style="margin-bottom:8px;display:inline-flex">Productivity</span>
+                  <h3>Deep Work in a World of Distractions</h3>
+                  <p>Cal Newport's framework is more relevant than ever. Here's how to actually implement deep work in your life.</p>
+                  <span class="read-time" style="display:block;margin-top:6px">10 min read · June 22, 2025</span>
+                </div>
+              </a>
+              <a href="post.html" class="search-result-item">
+                <div class="result-thumb" style="background:linear-gradient(135deg,#fed7aa,#fca5a5)">🌐</div>
+                <div class="result-body">
+                  <span class="tag tag-tech" style="margin-bottom:8px;display:inline-flex">Technology</span>
+                  <h3>The Future of Web Development: What's Next in 2025</h3>
+                  <p>Edge computing, AI-assisted coding, and the rise of full-stack frameworks are reshaping how we build for the web.</p>
+                  <span class="read-time" style="display:block;margin-top:6px">9 min read · June 19, 2025</span>
+                </div>
+              </a>
+              <a href="post.html" class="search-result-item">
+                <div class="result-thumb" style="background:linear-gradient(135deg,#e0e7ff,#fbcfe8)">🎨</div>
+                <div class="result-body">
+                  <span class="tag tag-design" style="margin-bottom:8px;display:inline-flex">Design</span>
+                  <h3>Claymorphism: The UI Trend Taking Over in 2025</h3>
+                  <p>Soft, puffy, and pastel — how designers are bringing warmth back to digital interfaces and why it works.</p>
+                  <span class="read-time" style="display:block;margin-top:6px">5 min read · June 16, 2025</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <aside>
+            <div class="ad-placeholder sidebar-ad" style="margin-bottom:24px"><span>Advertisement</span></div>
+            <div class="clay-card widget">
+              <h3 class="widget-title">Popular Searches</h3>
+              <div class="tags-cloud">
+                <a href="search.html?q=ai+tools" class="tag tag-tech">AI Tools</a>
+                <a href="search.html?q=productivity" class="tag tag-prod">Productivity</a>
+                <a href="search.html?q=morning+routine" class="tag tag-life">Morning Routine</a>
+                <a href="search.html?q=remote+work" class="tag tag-life">Remote Work</a>
+                <a href="search.html?q=notion" class="tag tag-prod">Notion</a>
+                <a href="search.html?q=web+development" class="tag tag-tech">Web Dev</a>
+                <a href="search.html?q=design" class="tag tag-design">Design</a>
+                <a href="search.html?q=finance" class="tag tag-finance">Finance</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">✦ ClayBlog</a>
+        <p>Fresh ideas, deep dives, and expert insights for curious minds.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn">𝕏</a>
+          <a href="#" class="social-btn">📸</a>
+          <a href="#" class="social-btn">📡</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Topics</h4><a href="category.html?cat=technology">Technology</a><a href="category.html?cat=lifestyle">Lifestyle</a><a href="category.html?cat=productivity">Productivity</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div>
+        <div class="footer-col"><h4>More</h4><a href="advertise.html">Advertise</a><a href="contact.html">Write for Us</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ClayBlog. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

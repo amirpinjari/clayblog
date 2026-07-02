@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClayBlog — Fresh Ideas, Deep Dives</title>
+  <meta name="description" content="ClayBlog delivers fresh articles on technology, lifestyle, productivity, and design. Explore our in-depth guides and expert insights." />
+  <meta name="keywords" content="blog, technology, lifestyle, productivity, design, tips, guides" />
+  <meta name="author" content="ClayBlog" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:title" content="ClayBlog — Fresh Ideas, Deep Dives" />
+  <meta property="og:description" content="ClayBlog delivers fresh articles on technology, lifestyle, productivity, and design." />
+  <meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ClayBlog — Fresh Ideas, Deep Dives" />
+  <meta name="twitter:description" content="ClayBlog delivers fresh articles on technology, lifestyle, productivity, and design." />
+  <meta name="twitter:image" content="https://yourdomain.com/assets/og-image.jpg" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ClayBlog",
+    "url": "https://yourdomain.com",
+    "description": "Fresh Ideas, Deep Dives",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourdomain.com/search.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Google AdSense -->
+  <!-- Replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span> ClayBlog
+      </a>
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="category.html" class="nav-link">Categories</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="search.html" class="btn-icon" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="badge">New Articles Every Week</span>
+          <h1 class="hero-title">Fresh Ideas &<br>Deep Dives</h1>
+          <p class="hero-desc">Explore thoughtful articles on technology, lifestyle, productivity, and creative design — written for curious minds.</p>
+          <div class="hero-actions">
+            <a href="category.html" class="btn btn-primary">Browse Topics</a>
+            <a href="about.html" class="btn btn-ghost">About Us</a>
+          </div>
+        </div>
+        <div class="hero-card clay-card hero-feature-card">
+          <div class="feature-label">Featured Post</div>
+          <h2 class="feature-title">10 AI Tools That Will Change How You Work in 2025</h2>
+          <p class="feature-desc">From writing assistants to automated workflows — here's what's actually worth your time.</p>
+          <div class="feature-meta">
+            <span class="tag tag-tech">Technology</span>
+            <span class="read-time">8 min read</span>
+          </div>
+          <a href="post.html" class="btn btn-primary mt-1">Read Article</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TOP AD BANNER ===== -->
+    <div class="container ad-zone">
+      <div class="ad-placeholder">
+        <!-- Google AdSense Banner 728×90 -->
+        <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+        <span>Advertisement</span>
+      </div>
+    </div>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="section categories-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Browse by Category</h2>
+          <a href="category.html" class="link-more">View all →</a>
+        </div>
+        <div class="categories-grid">
+          <a href="category.html?cat=technology" class="clay-card category-card cat-tech">
+            <span class="cat-icon">💻</span>
+            <h3>Technology</h3>
+            <p>24 articles</p>
+          </a>
+          <a href="category.html?cat=lifestyle" class="clay-card category-card cat-life">
+            <span class="cat-icon">🌿</span>
+            <h3>Lifestyle</h3>
+            <p>18 articles</p>
+          </a>
+          <a href="category.html?cat=productivity" class="clay-card category-card cat-prod">
+            <span class="cat-icon">⚡</span>
+            <h3>Productivity</h3>
+            <p>21 articles</p>
+          </a>
+          <a href="category.html?cat=design" class="clay-card category-card cat-design">
+            <span class="cat-icon">🎨</span>
+            <h3>Design</h3>
+            <p>15 articles</p>
+          </a>
+          <a href="category.html?cat=health" class="clay-card category-card cat-health">
+            <span class="cat-icon">🏃</span>
+            <h3>Health</h3>
+            <p>12 articles</p>
+          </a>
+          <a href="category.html?cat=finance" class="clay-card category-card cat-finance">
+            <span class="cat-icon">💰</span>
+            <h3>Finance</h3>
+            <p>9 articles</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LATEST POSTS ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Latest Articles</h2>
+          <div class="filter-tabs" role="tablist">
+            <button class="tab active" data-filter="all" role="tab">All</button>
+            <button class="tab" data-filter="technology" role="tab">Tech</button>
+            <button class="tab" data-filter="lifestyle" role="tab">Lifestyle</button>
+            <button class="tab" data-filter="productivity" role="tab">Productivity</button>
+          </div>
+        </div>
+
+        <div class="posts-grid" id="posts-grid">
+
+          <article class="clay-card post-card" data-category="technology">
+            <div class="post-img" style="background: linear-gradient(135deg,#a5f3fc,#818cf8)">
+              <span class="tag tag-tech">Technology</span>
+            </div>
+            <div class="post-body">
+              <h3 class="post-title"><a href="post.html">10 AI Tools That Will Change How You Work in 2025</a></h3>
+              <p class="post-excerpt">From writing assistants to automated workflows — here's what's actually worth your time and attention.</p>
+              <div class="post-meta">
+                <img src="assets/avatar1.svg" alt="Author" class="avatar" />
+                <div>
+                  <span class="author-name">Alex Rivera</span>
+                  <span class="post-date">June 28, 2025 · 8 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="clay-card post-card" data-category="lifestyle">
+            <div class="post-img" style="background: linear-gradient(135deg,#bbf7d0,#fde68a)">
+              <span class="tag tag-life">Lifestyle</span>
+            </div>
+            <div class="post-body">
+              <h3 class="post-title"><a href="post.html">Morning Routines of Highly Productive People</a></h3>
+              <p class="post-excerpt">Small habits compounded over time create extraordinary results. Here's what the data says.</p>
+              <div class="post-meta">
+                <img src="assets/avatar2.svg" alt="Author" class="avatar" />
+                <div>
+                  <span class="author-name">Maya Chen</span>
+                  <span class="post-date">June 25, 2025 · 6 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="clay-card post-card" data-category="productivity">
+            <div class="post-img" style="background: linear-gradient(135deg,#fecdd3,#c4b5fd)">
+              <span class="tag tag-prod">Productivity</span>
+            </div>
+            <div class="post-body">
+              <h3 class="post-title"><a href="post.html">Deep Work in a World of Distractions</a></h3>
+              <p class="post-excerpt">Cal Newport's framework is more relevant than ever. Here's how to actually implement it.</p>
+              <div class="post-meta">
+                <img src="assets/avatar3.svg" alt="Author" class="avatar" />
+                <div>
+                  <span class="author-name">Jordan Kim</span>
+                  <span class="post-date">June 22, 2025 · 10 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="clay-card post-card" data-category="technology">
+            <div class="post-img" style="background: linear-gradient(135deg,#fed7aa,#fca5a5)">
+              <span class="tag tag-tech">Technology</span>
+            </div>
+            <div class="post-body">
+              <h3 class="post-title"><a href="post.html">The Future of Web Development: What's Next in 2025</a></h3>
+              <p class="post-excerpt">Edge computing, AI-assisted coding, and the rise of full-stack frameworks are reshaping the landscape.</p>
+              <div class="post-meta">
+                <img src="assets/avatar1.svg" alt="Author" class="avatar" />
+                <div>
+                  <span class="author-name">Alex Rivera</span>
+                  <span class="post-date">June 19, 2025 · 9 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="clay-card post-card" data-category="design">
+            <div class="post-img" style="background: linear-gradient(135deg,#e0e7ff,#fbcfe8)">
+              <span class="tag tag-design">Design</span>
+            </div>
+            <div class="post-body">
+              <h3 class="post-title"><a href="post.html">Claymorphism: The UI Trend Taking Over in 2025</a></h3>
+              <p class="post-excerpt">Soft, puffy, and pastel — how designers are bringing warmth back to digital interfaces.</p>
+              <div class="post-meta">
+                <img src="assets/avatar2.svg" alt="Author" class="avatar" />
+                <div>
+                  <span class="author-name">Maya Chen</span>
+                  <span class="post-date">June 16, 2025 · 5 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="clay-card post-card" data-category="productivity">
+            <div class="post-img" style="background: linear-gradient(135deg,#d9f99d,#67e8f9)">
+              <span class="tag tag-prod">Productivity</span>
+            </div>
+            <div class="post-body">
+              <h3 class="post-title"><a href="post.html">How to Build a Second Brain with Notion</a></h3>
+              <p class="post-excerpt">A practical step-by-step system to capture, organize, and retrieve everything that matters.</p>
+              <div class="post-meta">
+                <img src="assets/avatar3.svg" alt="Author" class="avatar" />
+                <div>
+                  <span class="author-name">Jordan Kim</span>
+                  <span class="post-date">June 12, 2025 · 12 min</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="load-more-wrap">
+          <button class="btn btn-ghost" id="load-more">Load More Articles</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MID AD ===== -->
+    <div class="container ad-zone">
+      <div class="ad-placeholder">
+        <!-- Google AdSense Rectangle 300×250 -->
+        <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="rectangle"></ins> -->
+        <span>Advertisement</span>
+      </div>
+    </div>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="section newsletter-section">
+      <div class="container">
+        <div class="clay-card newsletter-card">
+          <div class="newsletter-deco deco-1">✦</div>
+          <div class="newsletter-deco deco-2">◉</div>
+          <div class="newsletter-inner">
+            <div class="newsletter-text">
+              <h2>Stay in the Loop</h2>
+              <p>Get our best articles delivered to your inbox every week. No spam, unsubscribe anytime.</p>
+            </div>
+            <form class="newsletter-form" id="newsletter-form" onsubmit="handleSubscribe(event)">
+              <input type="email" placeholder="your@email.com" required class="clay-input" aria-label="Email address" />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRENDING ===== -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="main-col">
+          <h2 class="section-title">Trending This Week</h2>
+          <div class="trending-list">
+            <a href="post.html" class="clay-card trending-item">
+              <span class="trend-num">01</span>
+              <div>
+                <h4>How to Build a Personal Brand Online in 90 Days</h4>
+                <span class="read-time">7 min · 12.4k views</span>
+              </div>
+            </a>
+            <a href="post.html" class="clay-card trending-item">
+              <span class="trend-num">02</span>
+              <div>
+                <h4>The Complete Guide to Passive Income Streams for 2025</h4>
+                <span class="read-time">15 min · 9.8k views</span>
+              </div>
+            </a>
+            <a href="post.html" class="clay-card trending-item">
+              <span class="trend-num">03</span>
+              <div>
+                <h4>Mastering ChatGPT Prompts: Advanced Techniques</h4>
+                <span class="read-time">11 min · 8.2k views</span>
+              </div>
+            </a>
+            <a href="post.html" class="clay-card trending-item">
+              <span class="trend-num">04</span>
+              <div>
+                <h4>The Minimalist's Guide to a Clutter-Free Life</h4>
+                <span class="read-time">6 min · 7.1k views</span>
+              </div>
+            </a>
+            <a href="post.html" class="clay-card trending-item">
+              <span class="trend-num">05</span>
+              <div>
+                <h4>Why Sleep Is Your Ultimate Productivity Hack</h4>
+                <span class="read-time">8 min · 6.5k views</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <aside class="sidebar-col">
+          <!-- Sidebar Ad -->
+          <div class="ad-placeholder sidebar-ad">
+            <!-- Google AdSense Sidebar 300×600 -->
+            <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto"></ins> -->
+            <span>Advertisement</span>
+          </div>
+
+          <div class="clay-card widget">
+            <h3 class="widget-title">Popular Tags</h3>
+            <div class="tags-cloud">
+              <a href="search.html?q=ai" class="tag tag-tech">AI</a>
+              <a href="search.html?q=productivity" class="tag tag-prod">Productivity</a>
+              <a href="search.html?q=design" class="tag tag-design">Design</a>
+              <a href="search.html?q=lifestyle" class="tag tag-life">Lifestyle</a>
+              <a href="search.html?q=remote-work" class="tag tag-tech">Remote Work</a>
+              <a href="search.html?q=finance" class="tag tag-finance">Finance</a>
+              <a href="search.html?q=health" class="tag tag-health">Health</a>
+              <a href="search.html?q=creativity" class="tag tag-design">Creativity</a>
+              <a href="search.html?q=tools" class="tag tag-prod">Tools</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">✦ ClayBlog</a>
+        <p>Fresh ideas, deep dives, and expert insights for curious minds.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter" class="social-btn">𝕏</a>
+          <a href="#" aria-label="Instagram" class="social-btn">📸</a>
+          <a href="#" aria-label="RSS" class="social-btn">📡</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <a href="category.html?cat=technology">Technology</a>
+          <a href="category.html?cat=lifestyle">Lifestyle</a>
+          <a href="category.html?cat=productivity">Productivity</a>
+          <a href="category.html?cat=design">Design</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="advertise.html">Advertise</a>
+          <a href="contact.html">Write for Us</a>
+          <a href="contact.html">Newsletter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ClayBlog. All rights reserved.</p>
+      <p>Made with ♥ | <a href="privacy.html">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
