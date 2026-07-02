@@ -17,7 +17,20 @@
       <a href="index.html" class="logo"><span class="logo-icon">✦</span> ClayBlog</a>
       <nav class="nav" id="main-nav">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="category.html" class="nav-link">Categories</a>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" id="cat-toggle" aria-haspopup="true" aria-expanded="false">
+            श्रेणियाँ <span class="dropdown-arrow">▾</span>
+          </button>
+          <div class="dropdown-menu" id="cat-menu" role="menu">
+            <a href="category.html?cat=automobile"><span class="d-icon">🚗</span> ऑटोमोबाइल</a>
+            <a href="category.html?cat=business"><span class="d-icon">💼</span> बिज़नेस</a>
+            <a href="category.html?cat=technology"><span class="d-icon">💻</span> टेक्नोलॉजी</a>
+            <a href="category.html?cat=finance"><span class="d-icon">💰</span> फाइनेंस</a>
+            <a href="category.html?cat=entertainment"><span class="d-icon">🎬</span> मनोरंजन</a>
+            <a href="category.html?cat=education"><span class="d-icon">📚</span> एजुकेशन</a>
+            <a href="category.html?cat=sports"><span class="d-icon">🏆</span> खेल</a>
+          </div>
+        </div>
         <a href="about.html" class="nav-link">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>

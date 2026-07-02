@@ -58,7 +58,20 @@
       </a>
       <nav class="nav" id="main-nav" aria-label="Main navigation">
         <a href="index.html" class="nav-link active">Home</a>
-        <a href="category.html" class="nav-link">Categories</a>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" id="cat-toggle" aria-haspopup="true" aria-expanded="false">
+            श्रेणियाँ <span class="dropdown-arrow">▾</span>
+          </button>
+          <div class="dropdown-menu" id="cat-menu" role="menu">
+            <a href="category.html?cat=automobile"><span class="d-icon">🚗</span> ऑटोमोबाइल</a>
+            <a href="category.html?cat=business"><span class="d-icon">💼</span> बिज़नेस</a>
+            <a href="category.html?cat=technology"><span class="d-icon">💻</span> टेक्नोलॉजी</a>
+            <a href="category.html?cat=finance"><span class="d-icon">💰</span> फाइनेंस</a>
+            <a href="category.html?cat=entertainment"><span class="d-icon">🎬</span> मनोरंजन</a>
+            <a href="category.html?cat=education"><span class="d-icon">📚</span> एजुकेशन</a>
+            <a href="category.html?cat=sports"><span class="d-icon">🏆</span> खेल</a>
+          </div>
+        </div>
         <a href="about.html" class="nav-link">About</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
@@ -117,35 +130,40 @@
           <a href="category.html" class="link-more">View all →</a>
         </div>
         <div class="categories-grid">
-          <a href="category.html?cat=technology" class="clay-card category-card cat-tech">
-            <span class="cat-icon">💻</span>
-            <h3>Technology</h3>
-            <p>24 articles</p>
-          </a>
-          <a href="category.html?cat=lifestyle" class="clay-card category-card cat-life">
-            <span class="cat-icon">🌿</span>
-            <h3>Lifestyle</h3>
+          <a href="category.html?cat=automobile" class="clay-card category-card" style="background:linear-gradient(145deg,rgba(253,230,138,0.5),rgba(255,255,255,0.9))">
+            <span class="cat-icon">🚗</span>
+            <h3>ऑटोमोबाइल</h3>
             <p>18 articles</p>
           </a>
-          <a href="category.html?cat=productivity" class="clay-card category-card cat-prod">
-            <span class="cat-icon">⚡</span>
-            <h3>Productivity</h3>
-            <p>21 articles</p>
+          <a href="category.html?cat=business" class="clay-card category-card" style="background:linear-gradient(145deg,rgba(167,243,208,0.5),rgba(255,255,255,0.9))">
+            <span class="cat-icon">💼</span>
+            <h3>बिज़नेस</h3>
+            <p>24 articles</p>
           </a>
-          <a href="category.html?cat=design" class="clay-card category-card cat-design">
-            <span class="cat-icon">🎨</span>
-            <h3>Design</h3>
-            <p>15 articles</p>
-          </a>
-          <a href="category.html?cat=health" class="clay-card category-card cat-health">
-            <span class="cat-icon">🏃</span>
-            <h3>Health</h3>
-            <p>12 articles</p>
+          <a href="category.html?cat=technology" class="clay-card category-card cat-tech">
+            <span class="cat-icon">💻</span>
+            <h3>टेक्नोलॉजी</h3>
+            <p>31 articles</p>
           </a>
           <a href="category.html?cat=finance" class="clay-card category-card cat-finance">
             <span class="cat-icon">💰</span>
-            <h3>Finance</h3>
-            <p>9 articles</p>
+            <h3>फाइनेंस</h3>
+            <p>19 articles</p>
+          </a>
+          <a href="category.html?cat=entertainment" class="clay-card category-card cat-design">
+            <span class="cat-icon">🎬</span>
+            <h3>मनोरंजन</h3>
+            <p>22 articles</p>
+          </a>
+          <a href="category.html?cat=education" class="clay-card category-card" style="background:linear-gradient(145deg,rgba(165,243,252,0.5),rgba(255,255,255,0.9))">
+            <span class="cat-icon">📚</span>
+            <h3>एजुकेशन</h3>
+            <p>16 articles</p>
+          </a>
+          <a href="category.html?cat=sports" class="clay-card category-card" style="background:linear-gradient(145deg,rgba(252,211,77,0.3),rgba(255,165,0,0.1),rgba(255,255,255,0.9))">
+            <span class="cat-icon">🏆</span>
+            <h3>खेल</h3>
+            <p>27 articles</p>
           </a>
         </div>
       </div>

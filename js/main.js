@@ -12,6 +12,24 @@ if (hamburger && nav) {
   });
 }
 
+// ---- Category dropdown ----
+const catToggle = document.getElementById('cat-toggle');
+const catMenu = document.getElementById('cat-menu');
+if (catToggle && catMenu) {
+  catToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = catMenu.classList.toggle('show');
+    catToggle.classList.toggle('open', isOpen);
+    catToggle.setAttribute('aria-expanded', isOpen);
+  });
+  document.addEventListener('click', () => {
+    catMenu.classList.remove('show');
+    catToggle.classList.remove('open');
+    catToggle.setAttribute('aria-expanded', false);
+  });
+  catMenu.addEventListener('click', (e) => e.stopPropagation());
+}
+
 // ---- Filter tabs ----
 const tabs = document.querySelectorAll('.tab');
 const posts = document.querySelectorAll('.post-card');

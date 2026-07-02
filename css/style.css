@@ -113,6 +113,67 @@ body > * { position: relative; z-index: 1; }
 .link-more:hover { opacity: 0.75; }
 
 /* ===================================================
+   DROPDOWN NAV
+   =================================================== */
+.nav-dropdown { position: relative; }
+.dropdown-toggle {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--clay-muted);
+  cursor: pointer;
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s;
+}
+.dropdown-toggle:hover, .dropdown-toggle.open {
+  background: rgba(124,92,252,0.12);
+  color: var(--clay-primary);
+}
+.dropdown-arrow { font-size: 0.7rem; transition: transform 0.2s; }
+.dropdown-toggle.open .dropdown-arrow { transform: rotate(180deg); }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 2px solid rgba(255,255,255,0.9);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--clay-shadow-lg);
+  padding: 10px;
+  min-width: 180px;
+  z-index: 200;
+}
+.dropdown-menu.show { display: block; animation: fadeInUp 0.2s ease forwards; }
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--clay-text);
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.dropdown-menu a:hover {
+  background: rgba(124,92,252,0.1);
+  color: var(--clay-primary);
+  transform: translateX(3px);
+}
+.dropdown-menu a .d-icon { font-size: 1rem; }
+
+/* ===================================================
    HEADER
    =================================================== */
 .site-header {
@@ -331,7 +392,7 @@ body > * { position: relative; z-index: 1; }
 .categories-section { padding-top: 0; }
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 16px;
 }
 .category-card {
@@ -895,7 +956,7 @@ body > * { position: relative; z-index: 1; }
    RESPONSIVE
    =================================================== */
 @media (max-width: 1024px) {
-  .categories-grid { grid-template-columns: repeat(3, 1fr); }
+  .categories-grid { grid-template-columns: repeat(4, 1fr); }
   .two-col { grid-template-columns: 1fr; }
   .post-layout { grid-template-columns: 1fr; }
   .post-sidebar { position: static; }
@@ -916,6 +977,7 @@ body > * { position: relative; z-index: 1; }
   .nav.open { display: flex; }
   .hamburger { display: flex; }
   .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .dropdown-menu { position: static; transform: none; box-shadow: none; border: none; background: rgba(124,92,252,0.06); border-radius: var(--radius-md); }
   .section { padding: 40px 0; }
 }
 
